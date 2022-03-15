@@ -1,0 +1,57 @@
+const mongoose = require('mongoose')
+const schoolSchema = new mongoose.Schema({
+    username:{
+        type:String,
+        required:true
+    },
+    firstname:{
+        type:String,
+        required:true
+    },
+    lastname:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true
+    },
+    altemail:{
+        type:String,
+        required:true
+    },
+    password:{
+        type:String,
+        required:true
+    },
+    mobile:{
+        type:String,
+        required:true
+    },
+    gender:{
+        type:String,
+        required:true
+    },
+    idcard:{
+        type:String,
+        required:true
+    },
+    dob:{
+        type:String,
+        required:true
+    },
+    city:{
+        type:String,
+        required:true
+    },
+    country:{
+        type:String,
+        required:true
+    },
+    marital:{
+        type:String,
+        required:true
+    },
+})
+
+module.exports = mongoose.model('Database', schoolSchema)
